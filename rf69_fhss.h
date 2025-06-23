@@ -1,3 +1,9 @@
+/*
+    Frequency-hopping spread-spectrum (FHSS) C library for Arduino (Atmega328 and ESP32) using RFM69HCW radio module
+    MIT License
+    Copyright (c) 2025  Anthony F. Dela Paz
+*/
+
 #ifndef RF69_FHSS_H
 #define RF69_FHSS_H
 
