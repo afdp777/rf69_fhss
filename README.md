@@ -26,6 +26,8 @@ Once a valid packet is received, the wait period on the next hop is adjust to an
 
 ## How To Use
 
+* Install the `RadioHead by Mike McCauley` library in Arduino IDE's Library Manager.
+
 * Copy the `rf69_fhss.h` file to your sketch directory.
 
 * Include it on your sketch / program:

@@ -420,8 +420,8 @@ bool fhss_get_received_packet_if_valid(uint8_t *out)
 
 /*
     Copy the packet data to the fhss' internal packet buffer.
+    Reset the timeout timer.
     Returns true if packet data was successfully copied.
-    Resets to transmit timeout timer.
 */
 bool fhss_send_packet_if_ready(uint8_t *packet_data)
 {
