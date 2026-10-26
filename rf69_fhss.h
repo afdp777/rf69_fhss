@@ -44,15 +44,15 @@
 
 struct fhss_state_s
 {
-    volatile int timeout_timer;
-    volatile uint8_t rx_timeout;
-    volatile uint8_t tx_timeout;
-    volatile uint8_t rx_millis_counter;
-    volatile uint8_t tx_millis_counter;
-    volatile uint8_t missed_counter;
-    volatile bool packet_received;
-    volatile bool packet_transmitted;
-    volatile bool radio_tx_mode;
+    int timeout_timer;
+    uint8_t rx_timeout;
+    uint8_t tx_timeout;
+    uint8_t rx_millis_counter;
+    uint8_t tx_millis_counter;
+    uint8_t missed_counter;
+    bool packet_received;
+    bool packet_transmitted;
+    bool radio_tx_mode;
 };
 typedef struct fhss_state_s fhss_state_t;
 
@@ -92,7 +92,7 @@ void fhss_task(void);
 #define HOP_KEY (0x20)
 #define HOP_KEY_POSITION (3)
 
-static fhss_state_t fhss = {
+static volatile fhss_state_t fhss = {
     .timeout_timer = 0,
     .rx_timeout = 0,
     .tx_timeout = 0,
